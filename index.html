@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Note for You</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="particle-container"></div>
+
+    <main>
+        <section id="landing-screen">
+            <h1>A little note...</h1>
+            <button id="open-card-btn" aria-label="Open the card">
+                For <span id="crush-name-btn"></span>
+            </button>
+        </section>
+
+        <section id="card-container">
+            <div class="card">
+                <h2 id="crush-name-card"></h2>
+                
+                <p id="main-message"></p>
+                
+                <div class="divider"></div>
+                
+                <p id="date" class="date-text"></p>
+                
+                <button id="from-sender-btn">
+                    From <span id="sender-name-btn"></span>
+                </button>
+            </div>
+        </section>
+
+        <div id="submessage-toast">
+            <p id="submessage-text"></p>
+            <button id="close-toast-btn" aria-label="Close message">&times;</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
